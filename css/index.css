@@ -1,3 +1,7 @@
+.column {
+  flex-direction: column;
+  align-content: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -171,49 +175,62 @@ img {
 .nav-container {
   font-size: 1.6rem;
   display: flex;
-  justify-content: flex-end;
   margin: auto;
+  justify-content: flex-end;
   width: 70%;
-  padding: 2rem;
+  padding: 1rem;
   border-bottom: 2px dashed #C0C0C0;
   text-align: center;
 }
 @media ( max-width: 500px ) {
   .nav-container {
-    justify-content: center;
+    width: 105%;
+    flex-wrap: nowrap;
+  }
+}
+.nav-container ul {
+  float: right;
+  margin-right: 15%;
+}
+@media ( max-width: 500px ) {
+  .nav-container ul {
+    margin: 0;
+  }
+}
+.nav-container nav {
+  width: 70%;
+  padding: 2rem;
+}
+@media ( max-width: 500px ) {
+  .nav-container nav {
     width: 100%;
+    padding-top: 2rem;
   }
 }
 .nav-container li {
   display: inline;
-  padding: 1rem;
+  padding-left: 1rem;
   margin: 1rem;
   color: black;
-}
-@media ( max-width: 500px ) {
-  .nav-container li {
-    display: inline;
-    text-align: center;
-    width: 100%;
-  }
 }
 .nav-container a {
   text-decoration: none;
 }
-.nav-container nav {
-  margin: 0 15%;
+.logo-wrap {
+  display: flex;
+  width: 15%;
 }
-a.logo {
+@media ( max-width: 500px ) {
+  .logo-wrap {
+    width: 30%;
+  }
+}
+.logo-wrap a.logo {
+  padding-top: 10%;
   color: black;
   font-family: 'Indie Flower', cursive;
   font-size: 2.6rem;
   font-weight: 600;
-  justify-content: flex-start;
-}
-@media ( max-width: 500px ) {
-  a.logo {
-    margin: 0;
-  }
 }
 .footer {
   width: 100%;
@@ -236,6 +253,12 @@ a.logo {
   width: 48%;
   padding-right: 1%;
 }
+@media ( max-width: 500px ) {
+  .home .content-section .text-content {
+    width: 100%;
+    margin-left: 5%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
@@ -243,9 +266,26 @@ a.logo {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media ( max-width: 500px ) {
+  .home .content-section .img-content {
+    width: 100%;
+    margin-left: 5%;
+  }
+}
+@media ( max-width: 500px ) {
+  .home .content-section {
+    flex-direction: column;
+    align-content: center;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media ( max-width: 500px ) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -271,6 +311,18 @@ a.logo {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media ( max-width: 500px ) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
+}
+@media ( max-width: 500px ) {
+  .home .content-pick {
+    flex-direction: column;
+    align-content: center;
+    margin-left: 5%;
+  }
 }
 .btn {
   margin: 3% 7%;
