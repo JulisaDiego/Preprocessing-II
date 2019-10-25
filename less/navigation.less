@@ -1,1 +1,62 @@
 // Navigation Styles here
+
+.nav-container {
+	font-size: 1.6rem;
+    display: flex;
+	justify-content: flex-end;
+	margin: auto;
+	width: 70%;
+    padding: 2.0rem;
+    border-bottom: 2px dashed @navigation-border;
+    text-align: center;
+
+	@media @mobile {
+        justify-content: center;
+        width: 100%;
+
+	}
+	
+	li {
+	 display: inline;
+	 padding: 1.0rem;
+     margin: 1.0rem;
+     color:black;
+
+    
+	@media @mobile {
+        display: inline;
+		// border-bottom: 1px solid grey;
+		text-align: center;
+		width: 100%;
+    }
+}
+    
+    a {
+		text-decoration: none;
+    }
+    
+    nav {
+     margin: 0 15%;
+ }
+
+
+}
+
+
+	
+ 
+
+
+
+a.logo {
+    color:black;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.6rem;
+    font-weight: 600;
+    justify-content: flex-start;
+
+    @media @mobile {
+        margin:0;
+    }
+}
+
