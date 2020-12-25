@@ -1,1 +1,72 @@
 // Navigation Styles here
+
+.nav-container {
+	font-size: 1.6rem;
+    display: flex;
+    margin: auto;
+    justify-content: flex-end;
+    width: 70%;
+    padding: 1.0rem;
+    border-bottom: 2px dashed @navigation-border;
+    text-align: center;
+
+	@media @mobile {
+        width: 105%;
+        flex-wrap: nowrap;
+        
+    }
+
+    ul {
+        float:right;
+        margin-right:15%;
+
+        @media @mobile {
+            margin:0;
+        }
+    }
+
+    nav {
+        width: 70%;
+        padding: 2.0rem;
+        
+
+        @media @mobile {
+            width: 100%;
+            padding-top:2.0rem;
+        }
+    }
+
+	
+	li {
+     display: inline;
+	 padding-left: 1.0rem;
+     margin: 1.0rem;
+     color:black;    
+    }
+    
+    a {
+        
+        text-decoration: none;
+    }
+
+
+}
+	
+ 
+.logo-wrap {
+    display: flex;
+    width: 15%;
+
+    @media @mobile {
+            width:30%;
+        }
+
+a.logo {
+    padding-top: 10%;
+    color:black;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.6rem;
+    font-weight: 600;
+    
+    }
+}
